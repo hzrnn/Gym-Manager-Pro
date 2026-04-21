@@ -15,7 +15,7 @@ def main():
         
         # 2. Initialisation de l'Interface Graphique (Front-End)
         # On passe le contrôleur en paramètre pour que les boutons sachent à qui parler.
-        interface = App(logique_metier=controleur)
+        interface = App(controleur)
         
         # 3. Lancement de la boucle visuelle
         interface.mainloop()

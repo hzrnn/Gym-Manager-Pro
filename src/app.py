@@ -93,10 +93,10 @@ class App(ctk.CTk):
         
         # --- CORRECTION 1 : Changement du texte indicatif (placeholder) ---
         # Le format doit correspondre à %Y-%m-%d exigé par ta fonction datetime.strptime dans logic.py
-        self.ent_debut = ctk.CTkEntry(self.page_ajouter, placeholder_text="Date début (AAAA-MM-JJ)", width=400, height=40)
+        self.ent_debut = ctk.CTkEntry(self.page_ajouter, placeholder_text="Date début (JJ-MM-AAAA)", width=400, height=40)
         self.ent_debut.pack(pady=10)
         
-        self.ent_fin = ctk.CTkEntry(self.page_ajouter, placeholder_text="Date fin (AAAA-MM-JJ)", width=400, height=40)
+        self.ent_fin = ctk.CTkEntry(self.page_ajouter, placeholder_text="Date fin (JJ-MM-AAAA)", width=400, height=40)
         self.ent_fin.pack(pady=10)
         
         ctk.CTkButton(self.page_ajouter, text="💾 Enregistrer le Membre", font=("Arial", 14, "bold"),
